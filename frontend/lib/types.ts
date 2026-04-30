@@ -1,0 +1,26 @@
+export type SurveyFormValues = {
+  age: number;
+  gender: "Homme" | "Femme" | "Préfère ne pas dire";
+  department: "Informatique" | "Mathématiques" | "Physique" | "Chimie" | "Biologie" | "Économie" | "Droit" | "Médecine" | "Lettres" | "Autre";
+  departmentOther?: string;
+  studyLevel: "L1" | "L2" | "L3" | "Master 1" | "Master 2" | "Doctorat";
+  residence: "Résidence universitaire" | "Chez les parents" | "Location privée" | "Autre";
+  residenceOther?: string;
+  sleepHours: number;
+  socialMediaHours: number;
+  sportFrequency: "Jamais" | "1-2 fois/semaine" | "3-4 fois/semaine" | "Tous les jours";
+  studyHours: number;
+  stressLevel: number;
+  anxietyLevel: number;
+  motivationLevel: number;
+  sleepQuality: "Très mauvaise" | "Mauvaise" | "Moyenne" | "Bonne" | "Excellente";
+  lonelinessLevel: number;
+  negativeThoughtsFrequency: "Jamais" | "Rarement" | "Parfois" | "Souvent" | "Très souvent";
+  consultedPsychologist: boolean;
+  familySupport: number;
+  friendsSupport: number;
+  workloadPerception: "Légère" | "Modérée" | "Lourde" | "Très lourde";
+  semesterAverage: number;
+  absencesCount: number;
+  comment?: string;
+};
