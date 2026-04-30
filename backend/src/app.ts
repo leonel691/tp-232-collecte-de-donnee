@@ -8,7 +8,7 @@ import { errorHandler } from "./middleware/errorHandler.js";
 
 export const app = express();
 
-app.use(cors({ origin: env.FRONTEND_URL ?? "*" }));
+app.use(cors({ origin: "tp-232-collecte-de-donnee.vercel.app" }));
 app.use(express.json());
 
 app.get("/health", (_req, res) => res.json({ ok: true }));
